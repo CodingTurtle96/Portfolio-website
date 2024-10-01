@@ -1,0 +1,212 @@
+<html>
+    <head>
+        <title>Portfolio</title>
+        <link rel="icon" href="C:\Users\kiran\OneDrive\Desktop\Coding folder\web_icon.ico" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .first_block{
+                height: 810px;
+                background: peachpuff; 
+            }
+            .header{
+                position: sticky;
+                top: 0;
+                left: 0;
+                width: 100%;
+                background-color: whitesmoke;
+                animation-name: fadeout;
+                animation-duration: infinite;
+                z-index: 1000;
+                padding: 5px;
+            }
+            @keyframes  fadeout {
+                0% {opacity: 1}
+                50% {opacity:  0.5}
+                100%  {opacity: 0}
+            }
+            .container-1 {
+                display: flex;
+                column-gap: 150px;
+                padding-top: 40px;
+                padding-left: 20px;
+                animation-name: slideUp;
+                animation-duration: 3s;
+                animation-fill-mode: backwards;
+                position: relative;
+            }
+            @keyframes slideUp {
+                0% {transform: translateY(60px); opacity: 0;}
+                100% {transform: translateY(0); opacity: 1;}
+            }
+            .intro-section{
+                float: left;
+                padding-left: 20px;
+                padding-bottom: 40px;
+            }
+            .Profile_section{
+                float: right;
+                padding-top: 144px;
+            }
+            .second_block{
+                height: 800px;
+                background: palegoldenrod;
+            }
+            .container-2{
+                display: flex;
+                column-gap: 150px;
+            }
+            .float1{
+                float: left;
+            }
+            .float2{
+                float: left;
+            }
+            .float3{
+                float: right;
+            }
+            .third_block{
+                height: 650px;
+                background: peachpuff;
+            }
+            .container-3{
+                display: flex;
+                column-gap: 150px;
+            }
+            .button-74 {
+                background-color: #fbeee0;
+                border: 2px solid #422800;
+                font-family: monospace;
+                border-radius: 30px;
+                box-shadow: #422800 4px 4px 0 0;
+                color: #422800;
+                cursor: pointer;
+                display: inline-block;
+                font-weight: 600;
+                font-size: 18px;
+                padding: 0 18px;
+                line-height: 50px;
+                text-align: center;
+                text-decoration: none;
+                user-select: none;
+                -webkit-user-select: none;
+                touch-action: manipulation;
+            }
+
+            .button-74:hover {
+                background-color: #fff;
+            }
+
+            .button-74:active {
+                box-shadow: #422800 2px 2px 0 0;
+                transform: translate(2px, 2px);
+            }
+
+            @media (min-width: 768px) {
+            .button-74 {
+                min-width: 120px;
+                padding: 0 25px;
+                }
+            }
+
+            @media screen and (max-width: 800px) {
+                .first_block, .second_block{
+                    width: 100%;
+                }
+            }
+            .float1, .float2, .float3{  
+                    animation-name: floating;
+                    animation-duration: 3s;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: ease-in-out;
+                    margin-left: 30px;
+                    margin-top: 50px;
+                    height: 400px; 
+                    width: 400px; 
+                    background: rgb(200, 200, 200); 
+                    padding: 10px;
+            }
+
+            @keyframes floating{
+                    0% { transform: translate(0,  0px); }
+                    50%  { transform: translate(0, 15px); }
+                    100%   { transform: translate(0, -0px); }    
+            }
+        </style>
+    </head>
+
+    <body style="font-family:Century Gothic; /*background: peachpuff*/ margin: 0px">
+    <div class="first_block">
+        <div class="header">
+        <table style="padding-top: 5px;">
+            <tr>
+                <td><h1 style="text-align: left; padding-left: 140px;font-size: 40px;">Portfolio</h1></td>
+                <td><h2 style="text-align: left; padding-left: 850px;"><a href="C:\Users\kiran\OneDrive\Desktop\Coding folder\profolio.html" style="text-decoration: none; color: black;">home</a></h2></td>
+                <td><h2 style="text-align: left; padding-left: 35px;"><a href="C:\Users\kiran\OneDrive\Desktop\Coding folder\profolio.html" style="text-decoration: none; color: black;">about</a></h2></td>
+                <td><h2 style="text-align: left; padding-left: 35px;"><a href="C:\Users\kiran\OneDrive\Desktop\Coding folder\profolio.html" style="text-decoration: none; color: black;">more</a></h2></td>
+            </tr>
+        </table>
+        </div>
+    <div class="container-1">
+        <div class="intro_section">
+            <table  style="padding-top: 50px; padding-left: 155px; margin-trim: 50%;">
+
+                <tr>
+                    <td><h3 style="font-family: Playwrite BE WAL; font-size: 30px;">Kiran Raj</h3></td>
+                </tr>
+                <tr>
+                    <td><p style="font-size: 70px; font-family: OCR A;"> C++<br>Developer</p></td>
+                </tr>
+                <tr>
+                    <td><p style="padding-top: 20px;font-family: Tw Cen MT;">
+                     I am a C++ developer with a passion for creating efficient and scalable, software solutions.<br>With a  strong foundation in computer science and a keen eye for detail, I am confident in my<br>ability to deliver  high-quality code that meets the needs of your project.
+                    </td></p>
+                </tr>
+                <tr>
+                    <td style="padding-top: 20px;"><button class="button-74" role="button">Say hello!</button></td>
+                </tr>
+            </table>
+        </div>
+        <div class="Profile_section">
+            <img src="C:\Users\kiran\OneDrive\Desktop\Coding folder\profile.png" alt="Profile picture">
+        </div>
+    </div>
+    </div>
+    <div class="second_block">
+        <div class="container-2">
+            <table style="padding-top: 80px; padding-left: 155px; margin-trim: 50%;">
+                <tr>
+                    <td><h1 style=" font-size: 40px; padding-top: 30px;">Education</h1></td>
+                </tr>
+            <tr>
+            <td>
+            <div class="float1">
+                first
+            </div>
+            <div class="float2">
+                second
+            </div>
+            <div class="float3">
+                third
+            </div>
+            </td>
+            </tr>
+        </table>
+        </div>
+    </div>
+    <div class="third_block">
+        <div class="container-3">
+            <table style="padding-top: 80px; padding-left: 155px; margin-trim: 50%;">
+                <tr>
+                    <td><h1 style=" font-size: 40px;">My work</h1></td>
+                </tr>
+                <tr>
+                    <td><h1 style="font-size: 30px">Project</h1></td>
+                </tr>
+                <tr>
+                    <td><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I have attended a international conference at panimalar </p></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </body>
+</html>
